@@ -11,7 +11,7 @@ public class LevelSelectController : MonoBehaviour
         {
             GameObject levelButton = Instantiate(_levelButtonPrefab, _content);
             LevelButtonController buttonController = levelButton.GetComponent<LevelButtonController>();
-            buttonController.Setup(level);
+            buttonController.Setup(level, levelManager);
         }
     }
 }

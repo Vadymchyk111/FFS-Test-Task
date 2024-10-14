@@ -6,4 +6,5 @@ public interface ILevelManager
     void SaveProgress(int levelIndex, int progress);
     List<LevelData> GetAllLevels();
     void LoadAllLevels();
+    LevelData GetCurrentLevel();
 }

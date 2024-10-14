@@ -3,13 +3,7 @@ using Zenject;
 
 public class HintController : MonoBehaviour
 {
-    private IHintSystem _hintSystem;
-
-    [Inject]
-    public void Construct(IHintSystem hintSystem)
-    {
-        _hintSystem = hintSystem;
-    }
+    [Inject] private IHintSystem _hintSystem;
 
     public void RequestHint(string word)
     {

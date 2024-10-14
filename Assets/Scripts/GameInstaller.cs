@@ -8,5 +8,7 @@ public class GameInstaller : MonoInstaller
         Container.Bind<ISaveSystem>().To<PlayerPrefsSaveSystem>().AsSingle();
         Container.Bind<IHintSystem>().To<HintSystem>().AsSingle();
         Container.Bind<LevelSelectController>().FromComponentInHierarchy().AsSingle();
+        Container.Bind<UIController>().FromComponentInHierarchy().AsSingle();
+        Container.Bind<GameController>().FromComponentInHierarchy().AsSingle();
     }
 }

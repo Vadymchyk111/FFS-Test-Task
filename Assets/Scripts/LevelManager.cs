@@ -13,7 +13,6 @@ public class LevelManager : ILevelManager
     {
         _currentLevelData = levelData;
         Debug.Log(levelData.levelName);
-        // Логіка завантаження рівня, наприклад, інстанціювання ресурсів
     }
 
     public void SaveProgress(int levelIndex, int progress)
@@ -29,6 +28,11 @@ public class LevelManager : ILevelManager
     public void LoadAllLevels()
     {
         _allLevels = Resources.LoadAll<LevelData>("Levels").ToList();
+    }
+
+    public LevelData GetCurrentLevel()
+    {
+        return _currentLevelData;
     }
 
     public List<LevelData> GetAllLevels()
