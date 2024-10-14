@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: muzzleloaders
   words:
-  - Galina
-  - Natasha
+  - Muza
+  - Loda
   bronzeThreshold: 0
   silverThreshold: 0
   goldThreshold: 0
