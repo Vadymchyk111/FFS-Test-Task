@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Levels
+  m_EditorClassIdentifier: 
+  m_GroupName: Levels
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 3ff2000304a2a3d4f8636d2ddb844300
+  m_SerializeEntries:
+  - m_GUID: bd842801929bc49d4847ba7db7d46c56
+    m_Address: Assets/Levels/SecondLevel 2.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LevelData
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a17ed645f410004f867e38be5eedb84
+    m_Address: Assets/Levels/FirstLevel.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LevelData
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c88203a7740d542729f5e072211e7ec2
+    m_Address: Assets/Levels/SecondLevel 1.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - LevelData
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: bdf17e85150eed94980b68eaaa9548a8, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: aff83dd8c1027bc4b949f6e3df26608e, type: 2}
+    - {fileID: 11400000, guid: df69fef2ccba15348be0fde301659946, type: 2}

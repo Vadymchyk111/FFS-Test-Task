@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class PlayerPrefsSaveSystem : ISaveSystem
 {
-    public void SaveLevelProgress(int levelIndex, int progress)
+    public void SaveLevelProgress(string levelName, float progress)
     {
-        PlayerPrefs.SetInt($"Level_{levelIndex}_Progress", progress);
+        PlayerPrefs.SetFloat($"Level_{levelName}_Progress", progress);
         PlayerPrefs.Save();
     }
 
-    public int GetLevelProgress(int levelIndex)
+    public float GetLevelProgress(string levelName)
     {
-        return PlayerPrefs.GetInt($"Level_{levelIndex}_Progress", 0);
+        return PlayerPrefs.GetFloat($"Level_{levelName}_Progress", 0);
     }
 }

@@ -2,15 +2,30 @@ using UnityEngine;
 
 public class HintSystem : IHintSystem
 {
-    private int _availableHints = 10;
+    private int _availableHints = 5;
 
-    public string GetHint(string word)
+    public string GetHint(LevelData levelData, int hindIndex)
     {
         if (_availableHints > 0)
         {
-            _availableHints--;
-            return word[0].ToString();  // Підказка: перша літера
+            DecrementHintCount();
+            return levelData.hints[hindIndex];
         }
         return null;
+    }
+
+    public void IncrementHintCount()
+    {
+        _availableHints++;
+    }
+    
+    public void DecrementHintCount()
+    {
+        _availableHints--;
+    }
+
+    public int GetHintsCount()
+    {
+        return _availableHints;
     }
 }

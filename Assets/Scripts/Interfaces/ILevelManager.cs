@@ -1,10 +1,10 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 public interface ILevelManager
 {
     void LoadLevel(LevelData levelData);
-    void SaveProgress(int levelIndex, int progress);
     List<LevelData> GetAllLevels();
-    void LoadAllLevels();
+    Task LoadAllLevels();
     LevelData GetCurrentLevel();
 }

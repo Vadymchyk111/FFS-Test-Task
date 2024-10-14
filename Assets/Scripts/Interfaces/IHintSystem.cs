@@ -1,4 +1,7 @@
 public interface IHintSystem
 {
-    string GetHint(string word);
+    string GetHint(LevelData levelData, int hintIndex);
+    int GetHintsCount();
+    void IncrementHintCount();
+    void DecrementHintCount();
 }

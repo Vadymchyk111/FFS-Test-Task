@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e2210a7c3b495a84dfbcd0d32251c4, type: 3}
+  m_Name: FirstLevel
+  m_EditorClassIdentifier: 
+  levelName: Adventure
+  words:
+  - Vent
+  - Tend
+  - Rate
+  - Rent
+  - Dart
+  - Date
+  - Tarn
+  - Nude
+  - Rant
+  - Vane
+  hints:
+  - A small opening that lets air in
+  - To take care of something or someone
+  - To evaluate or assign a level of quality
+  - The fee you pay for a space or property
+  - A small pointed missile that is thrown
+  - A social or romantic meeting
+  - A small mountain lake
+  - Without clothes, bare
+  - A loud, angry, or impassioned speech
+  - A device showing wind direction
+  bronzeThreshold: 20
+  silverThreshold: 50
+  goldThreshold: 80
